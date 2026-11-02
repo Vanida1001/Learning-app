@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Théorème du Texte</title>
+  <meta name="description" content="Apprendre l'analyse de texte, le commentaire et la dissertation comme un cours de maths.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;600;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Aller au contenu</a>
+  <header id="header" class="site-header">
+    <a class="logo" href="#/home" aria-label="Le Théorème du Texte, accueil">Le Théorème du Texte <span aria-hidden="true">∑</span></a>
+    <nav id="nav" aria-label="Navigation principale">
+      <a href="#/home" data-r="home">Accueil</a>
+      <a href="#/games" data-r="games">Jeux</a>
+      <a href="#/formulaire" data-r="formulaire">Formulaire</a>
+      <a href="#/erreurs" data-r="erreurs">Erreurs <span id="errBadge" class="pill" hidden></span></a>
+      <a href="#/mes-textes" data-r="mes-textes">Mes textes</a>
+      <a href="#/profil" data-r="profil">Profil</a>
+    </nav>
+    <div class="hud">
+      <span id="streak" class="streak" title="Série de jours"></span>
+      <div class="xpbox" title="Expérience">
+        <span id="levelTxt" class="lvl"></span>
+        <span class="xpbar" role="progressbar" aria-label="Progression vers le niveau suivant"><i id="xpFill"></i></span>
+        <span id="xpTxt" class="xptxt"></span>
+      </div>
+      <button id="themeBtn" class="btn icon" type="button" aria-label="Changer de thème">◐</button>
+    </div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <div id="modal" class="modal" hidden></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <noscript>Cette application nécessite JavaScript.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>
